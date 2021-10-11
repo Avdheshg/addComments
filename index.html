@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="public/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Add Comments</title>
+</head>
+<body>
+    
+    <article class="comments">
+
+        <!-- Form -->
+        <article class="form-wrapper">
+            <form action="/" method="post">
+                
+                <div class="details">
+                    <div class="first sub-deatils">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Avdhesh">
+                    </div>
+
+                    <div class="last sub-deatils">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Gautam">
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="email sub-deatils">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="avdheshg804@gmail.com">
+                    </div>
+
+                    <div class="phone sub-deatils">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="phone" placeholder="+91-46576589">
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="textarea sub-deatils">
+                        <textarea name="textarea" id="textarea" rows="5" placeholder="Your comment Here"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit">Add Comment</button>
+            </form>
+        </article>
+
+        <!-- ================ Dynamic Comment Section ================ -->
+        <div class="dynamic-comments">
+            <div class="dummy-comment">
+
+                <div class="top-details">
+                    <p class="email">Email</p>
+                    <p class="day-time">Day Time</p>
+                </div>
+    
+                <p class="textarea">TextArea</p>
+    
+                <p class="full-name">1stName LastName</p>
+    
+            </div>
+        </div>
+
+
+
+    </article>
+
+
+</body>
+</html>

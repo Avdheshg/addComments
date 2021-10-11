@@ -1,0 +1,163 @@
+/* Colors
+
+    main : #5138ed
+    light blue : #d9ddfc
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #d9ddfc;
+}
+
+/* ======== Flex Layout ======== */
+.comments {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.form-wrapper {
+    background-color: #5138ed;
+    flex: 0 1 32%;
+    padding: 2em;
+    height: 100vh;
+}
+
+.dynamic-comments {
+    flex: 0 1 calc(68% - 6em);
+}
+
+/* ======== Form ======== */
+form {
+    padding: 2em;
+    background-color: #d9ddfc;
+    border-radius: 1.4em;
+}
+
+.details {
+    display: flex;
+    justify-content:space-between;
+}
+
+.sub-deatils {
+    display: flex;
+    flex-direction: column;
+    /* font-size: 1.2em; */
+    font-weight: 500;
+}
+
+label {
+    margin-bottom: .4em;
+}
+
+input[type="text"] {
+    border-radius: 1.4em;
+    padding: 1em;
+    outline: none;
+    border: 1px solid rgb(214, 211, 211);
+}
+
+/* Gap bw details */
+.details + .details {
+    margin-top: 2em;
+}
+
+/*  =========   textarea  ==========*/
+.textarea {
+    min-width: 100%;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #d9ddfc;
+    border-radius: 1.4em;
+    padding: .5em;
+    outline: none;
+}
+
+
+
+/* =========== button ============*/
+.submit {
+    display: block;
+    /* width: 100%; */
+    margin-top: 3em;
+
+    padding: 1em 3em;
+    border-radius: 1.4em;
+    background-color: #5138ed;
+    color: #fff;
+    border: 2px solid #5138ed;
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+.submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 1px 9px 12px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 9px 12px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 9px 12px -3px rgba(0,0,0,0.75);
+}
+
+/* ================ Dynamic Comment Section ================ */
+.dummy-comment {
+    background-color: #5138ed;
+    margin: 3em 5em;
+    width: 90%;
+    padding: 2em;
+    border-radius: 1.4em;
+    color: #fff;
+}
+
+.dummy-comment > * {
+    margin-top: 1em;
+}
+
+.top-details {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textarea {
+}
+
+.full-name {
+    text-align: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
